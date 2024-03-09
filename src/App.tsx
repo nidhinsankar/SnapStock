@@ -1,12 +1,13 @@
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <>
+      <h2>Sidebar</h2>
+      <h3>navbar</h3>
+      <Outlet />
       <div className="bg-red-400 font-bold text-center">
-        <p>
-          A react template repository with tailwindcss, Typescript scaffolded by
-          vite
-        </p>
-        <h2>Feel free to start building your project</h2>
+        <h3>SnapStock With Google sheets</h3>
       </div>
     </>
   );

@@ -1,10 +1,11 @@
-import Links from "../components/Links";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 
 const Auth = () => {
   return (
-    <div>
-      Auth
-      <Links />
+    <div className="flex">
+      <SignIn />
+      <SignUp />
     </div>
   );
 };

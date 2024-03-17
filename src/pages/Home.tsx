@@ -1,10 +1,12 @@
-import Links from "../components/Links";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
       Home
-      <Links />
+      <Link to={"/store"} className="bg-red-500 text-white">
+        go to store
+      </Link>
     </div>
   );
 };

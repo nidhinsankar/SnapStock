@@ -1,12 +1,5 @@
-import Links from "../components/Links";
-
 const Checkout = () => {
-  return (
-    <div>
-      Checkout
-      <Links />
-    </div>
-  );
+  return <div>Checkout</div>;
 };
 
 export default Checkout;

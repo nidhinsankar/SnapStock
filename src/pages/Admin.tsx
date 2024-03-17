@@ -1,12 +1,5 @@
-import Links from "../components/Links";
-
 const Admin = () => {
-  return (
-    <div>
-      admin
-      <Links />
-    </div>
-  );
+  return <div>admin</div>;
 };
 
 export default Admin;

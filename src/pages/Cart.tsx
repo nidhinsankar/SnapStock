@@ -1,12 +1,5 @@
-import Links from "../components/Links";
-
 const Cart = () => {
-  return (
-    <div>
-      Cart
-      <Links />
-    </div>
-  );
+  return <div>Cart</div>;
 };
 
 export default Cart;

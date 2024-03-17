@@ -1,11 +1,4 @@
-import Links from "../components/Links";
-
 const UserDetail = () => {
-  return (
-    <div>
-      UserDetail
-      <Links />
-    </div>
-  );
+  return <div>UserDetail</div>;
 };
 export default UserDetail;

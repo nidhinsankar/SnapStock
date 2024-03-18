@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Product } from "./type";
 
 export const useFetch = (apiUri: string) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<Product[]>();
 
   const fetchApi = async () => {
     const api = await fetch(apiUri);

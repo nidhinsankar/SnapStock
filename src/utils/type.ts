@@ -10,3 +10,12 @@ export interface Product {
   description: string;
   title: string;
 }
+
+interface CardProps {
+  image: string;
+  title: string;
+  id: number;
+  category: string;
+  description?: string;
+  price: number;
+}

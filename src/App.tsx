@@ -1,19 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Links from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="flex bg-blue-700">
+    <div className="flex">
       <div>
-        <h2>Sidebar</h2>
-        <h3>navbar</h3>
-        <Links />
+        <Sidebar />
       </div>
-      <div className="bg-blue-300">
+      <div className="ml-[20%] pl-[3%] h-screen w-full bg-red-300">
+        {/* <Navbar /> */}
         <Outlet />
-        <div className="bg-red-400 text-white font-bold">
-          <h3>SnapStock With Google sheets</h3>
-        </div>
       </div>
     </div>
   );

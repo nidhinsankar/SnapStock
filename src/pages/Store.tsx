@@ -1,11 +1,18 @@
+import ProductCard from "../components/ProductCard";
 import { GET_PRODUCTS_API } from "../utils/constants";
 import { useFetch } from "../utils/useFetch";
 
 const Store = () => {
-  const values = useFetch(GET_PRODUCTS_API);
+  const productList = useFetch(GET_PRODUCTS_API);
 
-  console.log(values);
+  console.log(productList);
 
-  return <div>Store</div>;
+  return (
+    <div className="grid grid-cols-3 gap-3">
+      {productList?.map((product) => (
+        <ProductCard {...product} />
+      ))}
+    </div>
+  );
 };
 export default Store;

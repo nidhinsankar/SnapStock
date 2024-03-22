@@ -20,56 +20,61 @@ const SignUp = () => {
   };
   return (
     <div className="">
-      <form onSubmit={handleSubmit} className="flex flex-col border-2">
-        <label htmlFor="firstname">
+      <form onSubmit={handleSubmit} className="flex flex-col">
+        <label htmlFor="firstname" className="capitalize mt-4">
           first name
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="first name"
-            className="border-2"
-            value={data.firstname}
-            onChange={handleChange}
-          />
         </label>
-        <label htmlFor="lastname">
-          last name
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="second name"
-            className="border-2"
-            value={data.lastname}
-            onChange={handleChange}
-          />
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="first name"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
+          value={data.firstname}
+          onChange={handleChange}
+        />
+        <label htmlFor="lastname" className="capitalize mt-4">
+          last name{" "}
         </label>
-        <label htmlFor="email">
-          email
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email"
-            className="border-2"
-            value={data.email}
-            onChange={handleChange}
-          />
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="second name"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
+          value={data.lastname}
+          onChange={handleChange}
+        />
+
+        <label htmlFor="email" className="capitalize mt-4">
+          email{" "}
         </label>
-        <label htmlFor="password">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
+          value={data.email}
+          onChange={handleChange}
+        />
+
+        <label htmlFor="password" className="capitalize mt-4">
           password
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-            className="border-2"
-            value={data.password}
-            onChange={handleChange}
-          />
         </label>
-        <button className="border-2">SUBMIT</button>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
+          value={data.password}
+          onChange={handleChange}
+        />
+
+        <button className="rounded-md shadow-md focus:outline-none px-4 py-2 bg-blue-400 mt-3">
+          SUBMIT
+        </button>
       </form>
     </div>
   );

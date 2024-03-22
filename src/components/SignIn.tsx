@@ -8,18 +8,26 @@ const SignIn = () => {
   return (
     <div>
       <form className="flex flex-col">
-        <label htmlFor="email">email</label>
+        <label htmlFor="email" className="capitalize mt-4">
+          email
+        </label>
         <input
           type="email"
           {...formvlaues.register("email")}
-          className="border-2"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
+          placeholder="enter email"
         />
-        <label htmlFor="password">password</label>
+        <label htmlFor="password" className="capitalize mt-4">
+          password
+        </label>
         <input
           type="password"
-          className="border-2"
+          className="rounded-md shadow-md focus:outline-none px-4 py-2"
           placeholder="enter password"
         />
+        <button className="rounded-md shadow-md px-4 py-2 bg-blue-300 mt-4">
+          Login
+        </button>
       </form>
     </div>
   );

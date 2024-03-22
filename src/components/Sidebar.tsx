@@ -13,38 +13,62 @@ const Sidebar = () => {
     <div className="fixed top-0 bottom-0 w-[300px]  bg-blue-200 flex flex-col px-3">
       <h2 className="py-4 font-bold text-2xl">SNAPSTOCK</h2>
       <ul className="mt-4">
-        <li className="font-bold text-xl flex justify-between shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/"}>Home</Link>
+        <Link
+          to={"/"}
+          className="font-bold text-xl flex justify-between shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>Home</li>
           <IoHomeOutline />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/auth"}>auth</Link>
+        </Link>
+        <Link
+          to={"/auth"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>auth</li>
           <PiSignInFill />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/store"}>store</Link>
+        </Link>
+        <Link
+          to={"/store"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>store</li>
           <MdOutlineStorefront />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/cart"}>cart</Link>
+        </Link>
+        <Link
+          to={"/cart"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>cart</li>
           <FaShoppingCart />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/checkout"}>checkout</Link>
+        </Link>
+        <Link
+          to={"/checkout"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>checkout</li>
           <IoBagCheckOutline />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/addproduct"}>addproduct</Link>
+        </Link>
+        <Link
+          to={"/addproduct"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>addproduct</li>
           <MdAddCard />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/admin"}>admin</Link>
+        </Link>
+        <Link
+          to={"/admin"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>admin</li>
           <RiAdminFill />
-        </li>
-        <li className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200">
-          <Link to={"/userdetail"}>userdetail</Link>
+        </Link>
+        <Link
+          to={"/userdetail"}
+          className="font-bold text-xl flex justify-between  shadow-lg px-4 bg-slate-100 items-center py-3 my-3 rounded-xl hover:bg-blue-200"
+        >
+          <li>userdetail</li>
           <FaRegUser />
-        </li>
+        </Link>
       </ul>
     </div>
   );
